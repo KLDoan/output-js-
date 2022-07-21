@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> Select a car from the list</p>
+    <select name="" id="Car_select" onchange="do_something()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Ferrari">Ferrari</option>
+    </select>
+    <script>
+        // function do_something () {
+        //     let selectValue = document.getElementById("Car_select").value;
+        //     alert(selectValue)
+        // }
+        let selectElement = document.getElementById("Car_select");
+        selectElement.addEventListener("change", changeFuntion);
+        function changeFuntion() {
+            let selectValue = document.getElementById("Car_select").value
+            alert(selectValue)
+        }
+    </script>
+</body>
+
+</html>

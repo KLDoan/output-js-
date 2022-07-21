@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="text" onmouseover="text_over()" onmouseout="text_out()">this is a text</p>
+    <script>
+        function text_over() {
+            document.getElementById("text").style.color = "red"
+        }
+        function text_out() {
+            document.getElementById("text").style.color = "black"
+
+        }
+        // // cach 2
+        // let demo = document.getElementById("text")
+        // demo.addEventListener("mouseover", mouseover);
+        // function mouseover(
+        // ) { document.getElementById("text").style.color = "red" };
+        // demo.addEventListener("mouseout", mouseout)
+        // function mouseout(
+        // ) { document.getElementById("text").style.color = "black" };
+    </script>
+</body>
+
+</html>
