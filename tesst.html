@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>When you submit the form, a function is triggered which alerts your number.</p>
+    <form>
+        Enter number: <input type="text" id="num">
+        <input type="submit" value="Submit" onclick="myFunction()">
+    </form>
+
+    <script>
+
+        function myFunction() {
+            let a = document.getElementById("num").value
+            if (a % 2 == 0) {
+
+                alert(a + " is even");
+
+            } else {
+                alert(a + " is odd");
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
