@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cal.js"></script>
+</head>
+
+<body>
+    <h3>Input your number</h3>
+    <input type="number" id="num_1" placeholder="Enter number 1:"><br>
+    <input type="number" id="num_2" placeholder="Enter number 2:"><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">x</button>
+    <button onclick="division()">:</button>
+    <br>
+    <p id="result"></p>
+    <script>
+        let n1 = document.getElementById("num_1");
+        let n2 = document.getElementById("num_2");
+        let res = document.getElementById("result")
+        function add() {
+            res.value = parseInt(n1.value) + parseInt(n2.value);
+            res.innerText = "Addition value is " + res.value
+        };
+        function sub() {
+            res.value = parseInt(n1.value) - parseInt(n2.value);
+            res.innerText = "Submmission value is " + res.value
+
+        };
+        function mul() {
+            res.value = parseInt(n1.value) * parseInt(n2.value);
+            res.innerText = "Multiplication value is " + res.value
+
+        };
+        function division() {
+            res.value = parseInt(n1.value) / parseInt(n2.value);
+            res.innerText = "Division value is " + res.value
+
+        };
+
+    </script>
+</body>
+
+</html>
